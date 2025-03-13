@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Info - ITN</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/loader.css">
+</head>
+
+<body class="background">
+  <span class="toggle-btn" id="themeToggle">🌙</span>
+  <div id="code-loader" class="code-loader background">
+    <span>{</span><span>}</span>
+  </div>
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+  <header>
+    <div>
+      <div class="TopMenuPageOther">
+        <a href="../WEB/annee3.html">
+          <button class="ButtonTop ButtonTop-roundLeft butACTIF">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Web</span>
+          </button>
+        </a>
+        <a href="../PROGRA/annee3.html">
+          <button class="ButtonTop ">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Programmation</span>
+          </button>
+        </a>
+        <a href="../PROJET/annee4.html">
+          <button class="ButtonTop ">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Projet</span>
+          </button>
+        </a>
+        <a href="../HARDWARE/annee3.html">
+          <button class="ButtonTop ">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Hardware</span>
+          </button>
+        </a>
+        <a href="../AUTRE/annee3.html">
+          <button class="ButtonTop ButtonTop-roundRight">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Autres</span>
+          </button>
+        </a>
+      </div>
+      <div class="TopMenuPage">
+        <a href="./annee3.html">
+          <button class="ButtonTop ButtonTop-roundLeft-Sous sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 3ème</span>
+          </button>
+        </a>
+        <a href="./annee4.html">
+          <button class="ButtonTop sousMenu butACTIFsousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 4ème</span>
+          </button>
+        </a>
+        <a href="./annee5.html">
+          <button class="ButtonTop sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 5ème</span>
+          </button>
+        </a>
+        <a href="../index.html">
+          <button class="ButtonTop ButtonTop-roundRight-Sous sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Home</span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pagesCours">
+    <div>
+      <h1>UAA6 : Création et mise en ligne d'un site web</h1>
+      <p>
+        <i>Chaque partie du cours permet
+          l'apprentissage de différents points.
+          Évidemment le cours s'est construit au fur et à mesure et donc
+          évolue au fur et à mesure des étapes. Des retours en arrière et
+          changemement sont possibles.</i>
+      </p>
+    </div>
+    <div>
+      <ol class="EtapeOL">
+        <li class="step">
+          <h1>Fait en classe</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Rappel de la matière de 3ème</li>
+            <li>Reprise en main de leur projet</li>
+            <li>Modification pour les nouveaux arrivants</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Compétences 1</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>On commence par changer la couleur du bouton et du texte grâce à un hover</li>
+            <li>Changement de la taille grâce à scale, rotation et translation</li>
+            <li>Ajout d’un delay et d’un timing pour les changements</li>
+            <li>Création d’input pour tester focus, not et invalid</li>
+            <li>Ajout d’une barre de progress grâce à un bouton pour voir la propriété transform-origin</li>
+            <li><a class="lienImportant" href="4etape2/index.html" target="_blank">Résultat</a></li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Compétences 2</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Utilisation de keyFrames pour customiser la barre de progress</li>
+            <li>
+              On adapte pour que après le chargement de la barre, l’image de profil apparait et la barre
+              disparaisse
+            </li>
+            <li>Ajout d’un mouvement quand l’email n’est pas bon et le répéter plusieurs fois</li>
+            <li><a class="lienImportant" href="4etape3/index.html" target="_blank">Résultat</a></li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Compétences 3</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Vérification du fonctionnement sur GSM - tablette grâce à la console</li>
+            <li>Ajout de media query pour que certaines animations soient que sur ordinateur + gérer entre
+              min-max + orientation de l’écran</li>
+            <li>Utilisation d’une <a class="lienImportant" href="https://ionic.io/ionicons"
+                target="_blank">librairie</a> pour
+              afficher des icons sur les petits écrans ou aller chercher des images sur internet pour le
+              menu</li>
+            <li><a class="lienImportant" href="4etape4/index.html" target="_blank">Résultat</a></li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Compétences 4</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Création d’une site sur <a class="lienImportant" href="https://github.com/" target="_blank">GitHub</a>
+              pour
+              sauvegarder leur site sur internet</li>
+            <li>Utiliser gh-page pour mettre le site en ligne</li>
+          </ol>
+        </div>
+      </ol>
+    </div>
+  </main>
+
+  <footer class="leftDecal">
+    <a href="https://www.asty-moulin.be">
+      <button class="ButtonTop ButtonTop-roundLeft">
+        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+              fill="currentColor"></path>
+          </svg> Asty-Moulin</span>
+      </button>
+    </a>
+    <a href="https://www.cabanga.be">
+      <button class="ButtonTop ButtonTop-roundRight">
+        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+              fill="currentColor"></path>
+          </svg> Cabanga</span>
+      </button>
+    </a>
+  </footer>
+
+  <script type="text/javascript" src="../JS/index.js"></script>
+
+</body>
+
+</html>

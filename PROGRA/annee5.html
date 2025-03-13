@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Info - ITN</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/loader.css">
+</head>
+
+<body class="background">
+  <span class="toggle-btn" id="themeToggle">🌙</span>
+  <div id="code-loader" class="code-loader background">
+    <span>{</span><span>}</span>
+  </div>
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <header>
+    <div>
+      <div class="TopMenuPageOther">
+        <a href="../WEB/annee3.html">
+          <button class="ButtonTop ButtonTop-roundLeft">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Web</span>
+          </button>
+        </a>
+        <a href="../PROGRA/annee3.html">
+          <button class="ButtonTop butACTIF">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Programmation</span>
+          </button>
+        </a>
+        <a href="../PROJET/annee4.html">
+          <button class="ButtonTop ">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Projet</span>
+          </button>
+        </a>
+        <a href="../HARDWARE/annee3.html">
+          <button class="ButtonTop ">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Hardware</span>
+          </button>
+        </a>
+        <a href="../AUTRE/annee3.html">
+          <button class="ButtonTop ButtonTop-roundRight">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Autres</span>
+          </button>
+        </a>
+      </div>
+      <div class="TopMenuPage">
+        <a href="./annee3.html">
+          <button class="ButtonTop ButtonTop-roundLeft-Sous sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 3ème</span>
+          </button>
+        </a>
+        <a href="./annee4.html">
+          <button class="ButtonTop sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 4ème</span>
+          </button>
+        </a>
+        <a href="./annee5.html">
+          <button class="ButtonTop sousMenu butACTIFsousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 5ème</span>
+          </button>
+        </a>
+        <a href="./annee6.html">
+          <button class="ButtonTop sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 6ème</span>
+          </button>
+        </a>
+        <a href="../index.html">
+          <button class="ButtonTop ButtonTop-roundRight-Sous sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Home</span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pagesCours">
+    <div>
+      <h1>UAA11 : Programmation procédurale</h1>
+      <p>
+        <i>Cette année, nous allons mettre en place toutes les bases de la programmation procédurale
+          (Organiser un algorithme et découper un problème complexe en sous-problèmes).</i>
+      </p>
+
+      <p class="text-danger">IMPORTANT : Pour chaque analyse, vous devez passer par les différentes étapes de réflexion
+        suivantes : </p>
+      <ul class="SmallText">
+
+        <li>spécification du morceau de programme</li>
+        <li>liste et description des variables locales</li>
+        <li>Ecriture du GNS (algorithme)</li>
+      </ul>
+    </div>
+
+
+
+    <div class="PrograCote">
+      <button id="ButAlgo" class="ButtonTop ButtonTop-roundLeft ButtonTop-roundRight butACTIF">
+        <span>Partie algorithme</span>
+      </button>
+      <button id="ButLangage" class="ButtonTop ButtonTop-roundLeft ButtonTop-roundRight">
+        <span>Partie langage</span>
+      </button>
+    </div>
+
+
+    <div id="ContentAlgo">
+      <p class="SmallText">Cette partie permet d'établir l'algorithme de résolution d'un problème. Seuls structorizer et
+        Google Docs sont utiles.</p>
+      <ol class="EtapeOL">
+        <li class="step">
+          <h1>Rappels</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Rappel de la matière de 3ème et 4ème (variables, séquence, alternative et boucles)</li>
+            <li>Reprise en main de structorizer</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Gestion des nouvelles méthodologies</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Séparation des traitements vis à vis des entrées et sorties</li>
+            <li>Mise en place de la notion de spécification</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Procédures et fonctions</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Notion de passage de paramètres par valeur et référence</li>
+            <li>Différence entre procédure et fonction</li>
+            <li>Appel des procédures et fonctions</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Notion de tableau</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Création d'une variable de type tableau</li>
+            <li>Manipulation de ce tableau (parcours, remplissage, concaténation, ...)</li>
+            <li>Méthodes de tri d'un tableau (peu importe le contenu du tableau)</li>
+            <li>Résoudre des problèmes nécessitant l'utilisation de tableaux</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Notion de matrice</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Création d'une variable de type matrice</li>
+            <li>Manipulation de cette matrice (parcours, remplissage, concaténation, ...)</li>
+            <li>Méthodes standard sur des matrices de type entier (addition, multiplication, ...)</li>
+            <li>Résoudre des problèmes nécessitant l'utilisation de matrices</li>
+          </ol>
+        </div>
+      </ol>
+    </div>
+
+
+    <div id="ContentLangage">
+      <p class="SmallText">Cette partie permet de traduire les algorithmes en C#. </p>
+      <ol class="EtapeOL">
+        <li class="step">
+          <h1>Prise en main de visual studio Community 2022</h1>
+
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Connexion grâce au compte microsoft fourni par l'école</li>
+            <li>Construction d'un projet console .Net</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Premiers programmes</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Maitrise des entrées et sorties (Console.ReadLine et Console.WriteLine)</li>
+            <li>Syntaxe d'une procédure (<span class="text-danger">Interdiction d'écrire des traitements dans le
+                main</span>)</li>
+            <li>Déclaration et affectation des variables</li>
+            <li>Traduction des opérations mathématiques</li>
+            <li>Traduction d'alternative et de boucles</li>
+            <li>Appel de la procédure</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Vérification des entrées utilisateur</h1>
+        </li>
+
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Conversion de type de variables (parse, ...)</li>
+            <li>Utilisation du tryParse</li>
+            <li>Vérification des hypothèses avant l'appel du traitement</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Procédures et fonctions</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Traduction des signatures</li>
+            <li>Passage de paramètres par valeur et référence (ref, out)</li>
+            <li>Return de valeur pour les fonctions</li>
+            <li>Invocation des procédures et fonctions</li>
+            <li>Utilisation des procédures et fonctions propres au langage (Length, ...)</li>
+            <li>Création d'une structure pour stocker les sous-programmes</li>
+            <li>Utilisation de ces structures dans le programme principal</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Notion de tableau et matrice</h1>
+
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Déclaration et instanciation d'une variable de type tableau et matrice</li>
+            <li>Utilisation correcte de l'indicage</li>
+            <li>Maitrise de boucles for imbriquées</li>
+          </ol>
+        </div>
+        <li class="step">
+          <h1>Phase de testing</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Utilisation des points d'arrêts</li>
+            <li>Vérification du contenu des variables en cours d'exécution</li>
+            <li>Compréhension des messages d'erreurs renvoyés</li>
+            <li>Utilisation des documents de référence (fournis ou sur web)</li>
+          </ol>
+        </div>
+      </ol>
+    </div>
+
+
+
+
+  </main>
+
+  <footer class="leftDecal">
+    <a href="https://www.asty-moulin.be">
+      <button class="ButtonTop ButtonTop-roundLeft">
+        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+              fill="currentColor"></path>
+          </svg> Asty-Moulin</span>
+      </button>
+    </a>
+    <a href="https://www.cabanga.be">
+      <button class="ButtonTop ButtonTop-roundRight">
+        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+              fill="currentColor"></path>
+          </svg> Cabanga</span>
+      </button>
+    </a>
+  </footer>
+
+  <script type="text/javascript" src="../JS/index.js"></script>
+
+</body>
+
+</html>

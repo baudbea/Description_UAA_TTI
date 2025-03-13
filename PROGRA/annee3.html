@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Info - ITN</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/loader.css">
+</head>
+
+<body class="background">
+    <span class="toggle-btn" id="themeToggle">🌙</span>
+    <div id="code-loader" class="code-loader background">
+        <span>{</span><span>}</span>
+    </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <header>
+        <div>
+            <div class="TopMenuPageOther">
+                <a href="../WEB/annee3.html">
+                    <button class="ButtonTop ButtonTop-roundLeft">
+                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                    fill="currentColor"></path>
+                            </svg> Web</span>
+                    </button>
+                </a>
+                <a href="../PROGRA/annee3.html">
+                    <button class="ButtonTop butACTIF">
+                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                    fill="currentColor"></path>
+                            </svg> Programmation</span>
+                    </button>
+                </a>
+                <a href="../PROJET/annee4.html">
+                    <button class="ButtonTop ">
+                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                    fill="currentColor"></path>
+                            </svg> Projet</span>
+                    </button>
+                </a>
+                <a href="../HARDWARE/annee3.html">
+                    <button class="ButtonTop ">
+                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                    fill="currentColor"></path>
+                            </svg> Hardware</span>
+                    </button>
+                </a>
+                <a href="../AUTRE/annee3.html">
+                    <button class="ButtonTop ButtonTop-roundRight">
+                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                    fill="currentColor"></path>
+                            </svg> Autres</span>
+                    </button>
+                </a>
+            </div>
+            <div class="TopMenuPage">
+                <a href="./annee3.html">
+                    <button class="ButtonTop ButtonTop-roundLeft-Sous sousMenu butACTIFsousMenu">
+                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                    fill="currentColor"></path>
+                            </svg> 3ème</span>
+                    </button>
+                </a>
+                <a href="./annee4.html">
+                    <button class="ButtonTop sousMenu">
+                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                    fill="currentColor"></path>
+                            </svg> 4ème</span>
+                    </button>
+                </a>
+                <a href="./annee5.html">
+                    <button class="ButtonTop sousMenu">
+                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                    fill="currentColor"></path>
+                            </svg> 5ème</span>
+                    </button>
+                </a>
+                <a href="./annee6.html">
+                    <button class="ButtonTop sousMenu">
+                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                    fill="currentColor"></path>
+                            </svg> 6ème</span>
+                    </button>
+                </a>
+                <a href="../index.html">
+                    <button class="ButtonTop ButtonTop-roundRight-Sous sousMenu">
+                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                    fill="currentColor"></path>
+                            </svg> Home</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pagesCours">
+        <div>
+            <h1>UAA2 : Programmation séquentielle</h1>
+            <p>
+                <i>La programmation, c'est une matière très importante puisqu'elle continuera durant les 4 années.
+                    Nous voyons cette année les notions telles que les variables, les boucles, opérateurs logiques ou
+                    débugage.
+                    Nous travaillons grâce à structorizer pour schématiser l'algorithme et python pour programmer.</i>
+            </p>
+            <p class="text-danger">Toutes ces compétences doivent être maitrisées en structorizer et en python</p>
+        </div>
+        <div>
+            <ol class="EtapeOL">
+                <li class="step">
+                    <h1>Prérequis</h1>
+                </li>
+                <div class="content">
+                    <ol class="listeTypeDecimal">
+                        <li>Résoudre des situations simples dans <a class="lienImportant"
+                                href="https://studio.code.org/users/sign_in" target="_blank">code.org</a></li>
+                        <li>Les 4 premieres leçons de
+                            <a class="lienImportant"
+                                href="https://studio.code.org/s/express-2021/lessons/1/levels/1?login_required=true"
+                                target="_blank">l'express course</a>
+                            ne doit poser aucun soucis.
+                        </li>
+                        <li>Compréhension de consignes et le plaisir de chercher.</li>
+                        <li>Télécharger et lancer
+                            <a class="lienImportant"
+                                href="https://drive.google.com/file/d/1CRa7mighDWU52m6ysW0-YMjUSP5X4n63/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer">
+                                structorizer
+                            </a> sur leur machine
+                        </li>
+                        <li>Aller sur le site pour <a href="http://www.jaicompris.com/python.php" class="lienImportant"
+                                target="_blank" rel="noopener noreferrer">Python</a></li>
+                    </ol>
+                </div>
+
+                <li class="step">
+                    <h1>L'algorithmie</h1>
+                </li>
+                <div class="content">
+                    <ol class="listeTypeDecimal">
+                        <li>Pouvoir mettre des instructions l'une en dessous de l'autre face à un problème en français
+                        </li>
+                        <li>Présenter un structorizer pour lister la résolution d'un problème</li>
+                    </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Les variables</h1>
+                </li>
+                <div class="content">
+                    <ol class="listeTypeDecimal">
+                        <li>Écrire une variable selon le langage</li>
+                        <li>Définir le type de variable en fonction de la situation</li>
+                        <li>Affecter une valeur à une variable</li>
+                        <li>Manipuler ses variables pour faire des calculs avec celles-ci</li>
+                        <li>Donner la valeur d'une variable</li>
+                        <li>Utiliser la concaténation pour construire des phrases mélangeant textes et variables</li>
+                        <li>Comprendre l'opérateur modulo</li>
+                    </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Les fonctions</h1>
+                </li>
+                <div class="content">
+                    <ol class="listeTypeDecimal">
+                        <li>
+                            Utiliser les
+                            <a class="lienImportant"
+                                href="https://help.structorizer.fisch.lu/index.php?menu=153&page=#supported_functions"
+                                target="_blank">
+                                fonctions
+                            </a>
+                            pour des opérations mathématiques
+                        </li>
+                        <li>Utiliser les fonctions sur des chaines de caractères</li>
+                    </ol>
+                </div>
+
+                <li class="step">
+                    <h1>Les boucles</h1>
+                </li>
+                <div class="content">
+                    <ol class="listeTypeDecimal">
+                        <li>Maitriser les exercices de
+                            <a class="lienImportant" href="https://studio.code.org/users/sign_in"
+                                target="_blank">code.org</a>
+                            en lien avec les boucles.
+                        </li>
+                        <li>Maitriser la boucle for</li>
+                        <li>Maitriser la boucle while</li>
+                        <li>Pouvoir imbriquer différentes boucles utilisées ci-dessus</li>
+                        <li>Ajouter des opérateurs logiques dont "et", "ou" et "non"</li>
+                    </ol>
+                </div>
+
+                <li class="step">
+                    <h1>En complément</h1>
+                </li>
+                <div class="content">
+                    <ol class="listeTypeDecimal">
+                        <li>Commenter votre code pour qu'il puisse être utilisé par une autre personne</li>
+                        <li>Face à une situation complexe, pouvoir chercher et proposer des solutions</li>
+                        <li>Corriger une analyse ou séquence défaillante sans spécialement la lancer</li>
+                        <li>Maitriser la boucle until</li>
+                    </ol>
+                </div>
+            </ol>
+        </div>
+    </main>
+
+    <footer class="leftDecal">
+        <a href="https://www.asty-moulin.be">
+            <button class="ButtonTop ButtonTop-roundLeft">
+                <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                            fill="currentColor"></path>
+                    </svg> Asty-Moulin</span>
+            </button>
+        </a>
+        <a href="https://www.cabanga.be">
+            <button class="ButtonTop ButtonTop-roundRight">
+                <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                            fill="currentColor"></path>
+                    </svg> Cabanga</span>
+            </button>
+        </a>
+    </footer>
+
+    <script type="text/javascript" src="../JS/index.js"></script>
+
+</body>
+
+</html>

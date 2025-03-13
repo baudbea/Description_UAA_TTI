@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Info - ITN</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/loader.css">
+</head>
+
+<body class="background">
+  <span class="toggle-btn" id="themeToggle">🌙</span>
+  <div id="code-loader" class="code-loader background">
+    <span>{</span><span>}</span>
+  </div>
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+  <header>
+    <div>
+      <div class="TopMenuPageOther">
+        <a href="../WEB/annee3.html">
+          <button class="ButtonTop ButtonTop-roundLeft butACTIF">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Web</span>
+          </button>
+        </a>
+        <a href="../PROGRA/annee3.html">
+          <button class="ButtonTop ">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Programmation</span>
+          </button>
+        </a>
+        <a href="../PROJET/annee4.html">
+          <button class="ButtonTop ">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Projet</span>
+          </button>
+        </a>
+        <a href="../HARDWARE/annee3.html">
+          <button class="ButtonTop ">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Hardware</span>
+          </button>
+        </a>
+        <a href="../AUTRE/annee3.html">
+          <button class="ButtonTop ButtonTop-roundRight">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Autres</span>
+          </button>
+        </a>
+      </div>
+      <div class="TopMenuPage">
+        <a href="./annee3.html">
+          <button class="ButtonTop ButtonTop-roundLeft-Sous sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 3ème</span>
+          </button>
+        </a>
+        <a href="./annee4.html">
+          <button class="ButtonTop sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 4ème</span>
+          </button>
+        </a>
+        <a href="./annee5.html">
+          <button class="ButtonTop sousMenu butACTIFsousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 5ème</span>
+          </button>
+        </a>
+        <a href="../index.html">
+          <button class="ButtonTop ButtonTop-roundRight-Sous sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Home</span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pagesCours">
+    <div>
+      <h1>UAA12 : Développement d'un site web dynamique</h1>
+      <p>
+        <i>Cette année, nous allons attaquer la partie dynamique d'un site web.
+          Cela signifie qu'une base de données est ajouté à votre site permettant
+          un système d'utilisateurs qui auront chacun leur biens.</i>
+      </p>
+      <p class="text-danger">IMPORTANT : à la fin de chaque étape, push ton projet sur Github</p>
+    </div>
+    <div>
+      <ol class="EtapeOL">
+        <li class="step">
+          <h1>Constuire des formulaires</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Transformer tous ses fichiers html en fichiers php</li>
+            <li>Créer d'un formulaire avec des fieldset, legend, des input type text et ses labels</li>
+            <li>Ajouter des inputs d'autres
+              <a class="lienImportant" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input"
+                target="_blank" rel="noopener noreferrer">
+                types
+              </a> (number, password, email, date, checkbox, ...)
+            </li>
+            <li>Ajouter du bouton submit pour envoyer les données</li>
+            <li>Mettre les
+              <a class="lienImportant" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/input#attributs"
+                target="_blank" rel="noopener noreferrer">
+                attributs
+              </a> telles que palceholder, min, max, value, ...
+            </li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Ajouter la base de données</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Rappel de l'<a href="../AUTRE/annee4BDD.html" class="lienImportant">UAA7</a> de la 4ème</li>
+            <li>Préparer le serveur hebergeant la base de données</li>
+            <li>Créer la base de données ainsi que les différentes entités liées à son MLD</li>
+            <li>Ajouter des données dans la base permettant de l'utiliser</li>
+            <li>Connecter son site à la base de données</li>
+            <li>Faire une première requête propre avec le prepare, execute et fetchAll pour récupérer les biens</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Structurer son code avec MVC</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Comprendre l'architecture MVC pour mieux structurer son projet</li>
+            <li>Adapter son arborescence pour correspondre au modèle MVC</li>
+            <li>Créer le routage dans le controller pour passer d'une page à l'autre selon l'URL</li>
+            <li>Afficher la première page avec tous les biens</li>
+            <li>Création d'un premier component navbar</li>
+            <li>Afficher les pages connexion et inscription</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>CRUD utilisateur</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Traiter le formulaire d'inscription avec $_POST</li>
+            <li>Vérifier que les données ne sont pas vide côté serveur</li>
+            <li>Vérifier l'unicité des données selon des critères pertinents</li>
+            <li>Gérer la variable globale $_SESSION</li>
+            <li>Traiter la connexion/déconnexion de l'utilisateur avec le fetch</li>
+            <li>Changer l'affichage du menu selon l'état de l'utilisateur</li>
+            <li>Permettre à l'utilisateur de modifier son profil</li>
+            <li>Permettre à l'utilisateur de supprimer son profil</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>CRUD biens</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Afficher la page des biens personnels</li>
+            <li>Permettre à l'utilisateur de modifier son bien</li>
+            <li>Permettre à l'utilisateur de supprimer son bien</li>
+            <li>Permettre à l'utilisateur de créer un nouveau bien</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Partie sécurité</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Éviter les injections SQL depuis un formulaire</li>
+            <li>Empêcher une personne de supprimer/modifier le bien de quelqu'un d'autre</li>
+            <li>Éviter les attaques XSS</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Bonus</h1>
+        </li>
+        <div class="content">
+          <ol class="listeTypeDecimal">
+            <li>Gérer les images dans la base de données</li>
+            <li>Ajouter des flash messages avec la bonne couleur</li>
+            <li>Héberger son site sur heroku</li>
+            <li>Ajouter des rôles aux utilisateurs de son site</li>
+            <li>Ajouter un système de filtrage sur les biens avec $_GET</li>
+          </ol>
+        </div>
+      </ol>
+    </div>
+  </main>
+
+  <footer class="leftDecal">
+    <a href="https://www.asty-moulin.be">
+      <button class="ButtonTop ButtonTop-roundLeft">
+        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+              fill="currentColor"></path>
+          </svg> Asty-Moulin</span>
+      </button>
+    </a>
+    <a href="https://www.cabanga.be">
+      <button class="ButtonTop ButtonTop-roundRight">
+        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+              fill="currentColor"></path>
+          </svg> Cabanga</span>
+      </button>
+    </a>
+  </footer>
+
+  <script type="text/javascript" src="../JS/index.js"></script>
+
+</body>
+
+</html>

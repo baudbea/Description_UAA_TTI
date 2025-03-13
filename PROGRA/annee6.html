@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Info - ITN</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/loader.css">
+</head>
+
+<body class="background">
+  <span class="toggle-btn" id="themeToggle">🌙</span>
+  <div id="code-loader" class="code-loader background">
+    <span>{</span><span>}</span>
+  </div>
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <header>
+    <div>
+      <div class="TopMenuPageOther">
+        <a href="../WEB/annee3.html">
+          <button class="ButtonTop ButtonTop-roundLeft">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Web</span>
+          </button>
+        </a>
+        <a href="../PROGRA/annee3.html">
+          <button class="ButtonTop butACTIF">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Programmation</span>
+          </button>
+        </a>
+        <a href="../PROJET/annee4.html">
+          <button class="ButtonTop ">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Projet</span>
+          </button>
+        </a>
+        <a href="../HARDWARE/annee3.html">
+          <button class="ButtonTop ">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Hardware</span>
+          </button>
+        </a>
+        <a href="../AUTRE/annee3.html">
+          <button class="ButtonTop ButtonTop-roundRight">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Autres</span>
+          </button>
+        </a>
+      </div>
+      <div class="TopMenuPage">
+        <a href="./annee3.html">
+          <button class="ButtonTop ButtonTop-roundLeft-Sous sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 3ème</span>
+          </button>
+        </a>
+        <a href="./annee4.html">
+          <button class="ButtonTop sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 4ème</span>
+          </button>
+        </a>
+        <a href="./annee5.html">
+          <button class="ButtonTop sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 5ème</span>
+          </button>
+        </a>
+        <a href="./annee6.html">
+          <button class="ButtonTop sousMenu butACTIFsousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> 6ème</span>
+          </button>
+        </a>
+        <a href="../index.html">
+          <button class="ButtonTop ButtonTop-roundRight-Sous sousMenu">
+            <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                  fill="currentColor"></path>
+              </svg> Home</span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pagesCours">
+
+    <div>
+      <h1>UAA14 : Programmation Orientée Objet</h1>
+      <p>
+        <i>Prérequis : révisions procédures / fonctions, exercices de mise en route.</i>
+      </p>
+      <p class="SmallText">Ensuite, sur les 4 heures de cours hebdomadaire, on divisera en 2 blocs :</p>
+      <ul class="SmallText">
+        <li>2h pour l’étude des WPF (usage d’objets)</li>
+        <li>2h pour l’étude de l’orienté objet.</li>
+      </ul>
+      <p class="SmallText"> Par la suite, quand les notions de base de WPF et POO sont acquises, on mêlera les deux dans
+        des exercices
+        plus complets.</p>
+    </div>
+
+    <div class="PrograCote">
+      <button id="ButAlgo" class="ButtonTop ButtonTop-roundLeft ButtonTop-roundRight butACTIF">
+        <span>Partie POO</span>
+      </button>
+      <button id="ButLangage" class="ButtonTop ButtonTop-roundLeft ButtonTop-roundRight">
+        <span>Partie WPF</span>
+      </button>
+    </div>
+
+    <div id="ContentAlgo">
+      <ol class="EtapeOL">
+        <li class="step">
+          <h1>Introduction (présentation) générale</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Introduction : différence POO / Programmation procédurale</li>
+            <li>Utilisation de Google Diagrams pour schématiser les diagrammes UML</li>
+            <li>Premières classes</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Protection des classes</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Encapsulation : getters, setters / propriétés</li>
+            <li>Exercices variés</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Entraînement et réflexion</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Corriger les UML de classes en respectant les règles et conventions</li>
+            <li>Chercher les erreurs dans des codes</li>
+            <li>références versus objets</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Classes liées</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Association</li>
+            <li>Agrégation</li>
+            <li>Composition</li>
+            <li>Utilisation dans l'exercice de la bibliothèque</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Héritage</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Notion de classes héritées : Théorie, exemples</li>
+            <li>Classes abstraites</li>
+            <li>Redéfinition de méthodes : Override</li>
+            <li>Exemples et exercices variés</li>
+          </ol>
+        </div>
+
+
+        <li class="step">
+          <h1>Utilisation de Bases de données MySql en C# </h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Préparation de la solution afin de dialoguer avec MySql</li>
+            <li>Chaîne de connexion</li>
+            <li>Utilisation de dataset et dataAdapter</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Exercices globaux</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Guichet bancaire : conception des classes, test du code en C# console</li>
+            <li>Gestion d'un bar à cocktails : conception des classes, test du code en C# console</li>
+            <li>...</li>
+          </ol>
+        </div>
+      </ol>
+    </div>
+
+
+
+
+    <div id="ContentLangage">
+      <ol class="EtapeOL">
+        <li class="step">
+          <h1>Interfaces statiques</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Prise en main de XAML : exercices simples</li>
+            <li>Agencement des objets : test des différentes méthodes stackPanel / DockPanel / WrapPanel / Canvas
+            </li>
+            <li>Matching game : un jeu complet pour découvrir les événements</li>
+            <li>Events : gestion des événements d'interface</li>
+            <li>Exercices variés</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Interfaces dynamiques</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Création dynamique du contenu d’une fenêtre</li>
+            <li>Création de damiers en tous genres</li>
+          </ol>
+        </div>
+
+        <li class="step">
+          <h1>Exercices récapitulatifs</h1>
+        </li>
+        <div class="content ">
+          <ol class="listeTypeDecimal">
+            <li>Exercices récapitulatifs</li>
+            <li>Récupération des exercices globaux en console pour leur adapter une interface</li>
+          </ol>
+        </div>
+      </ol>
+    </div>
+
+  </main>
+
+  <footer class="leftDecal">
+    <a href="https://www.asty-moulin.be">
+      <button class="ButtonTop ButtonTop-roundLeft">
+        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+              fill="currentColor"></path>
+          </svg> Asty-Moulin</span>
+      </button>
+    </a>
+    <a href="https://www.cabanga.be">
+      <button class="ButtonTop ButtonTop-roundRight">
+        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+              fill="currentColor"></path>
+          </svg> Cabanga</span>
+      </button>
+    </a>
+  </footer>
+
+  <script type="text/javascript" src="../JS/index.js"></script>
+
+</body>
+
+</html>

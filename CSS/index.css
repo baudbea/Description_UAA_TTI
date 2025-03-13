@@ -1,0 +1,794 @@
+:root {
+    --background-color: #FFFFFF;
+    --h1Color: #007BFF;
+    --TextColor: #2C3E50;
+    --CardBKColor: #c3c3c3;
+    --IColor: rgba(34, 34, 34, 0.61);
+    --LienColor: #893900;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.dark-mode {
+    --background-color: #121212;
+    --h1Color: #00BFFF;
+    --TextColor: #E0E0E0;
+    --CardBKColor: #1a1a1a;
+    --IColor: rgba(255, 255, 255, 0.61);
+    --LienColor: #FF9500;
+}
+
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 50px 0 50px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: sans-serif;
+    background-color: var(--background-color);
+    transition: all 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.code-loader {
+    transition: opacity 1s ease-out;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    /* Évite les interactions après disparition */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    /* Cette ligne permet de "pousser" le footer vers le bas si nécessaire */
+    z-index: 2;
+    margin-bottom: 70px;
+    padding-bottom: 15px;
+}
+
+.leftDecal {
+    margin-left: 9px;
+}
+
+.TopMenuPageOther {
+    display: flex;
+}
+
+.TopMenuPage {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 3% 0 0 0;
+    text-align: center;
+    color: var(--h1Color);
+}
+
+.pagesCours i {
+    color: var(--IColor);
+}
+
+.text-danger {
+    font-weight: 600;
+    color: rgb(187, 0, 0);
+    font-stretch: expanded;
+}
+
+u {
+    font-size: xx-large;
+}
+
+/* ---- */
+
+/* Styles pour la structure principale */
+.pagesCours {
+    margin: 40px 40px 0 40px;
+    color: white;
+    /* Couleur blanche pour tout le texte */
+    font-family: 'Arial', sans-serif;
+}
+
+/* bloc intro */
+.intro {
+    width: 80%;
+    margin: 20px;
+}
+
+.or {
+    color: var(--LienColor);
+}
+
+/* Styles pour les sous-listes numérotées */
+.listeTypeDecimal {
+    list-style-type: decimal;
+    /* Numérotation des sous-éléments */
+    margin: 10px 0 10px 30px;
+    padding: 0;
+}
+
+.listeTypeDecimal>li {
+    font-size: 1.1rem;
+    /* Taille intermédiaire pour les sous-éléments */
+    margin-bottom: 10px;
+
+    color: var(--TextColor);
+    /* Presque blanc */
+}
+
+.listeIntroAlpha>li {
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    color: var(--TextColor);
+}
+
+/* Sous-listes de compétences */
+.listeCompetences {
+    list-style-type: square;
+    line-height: 110%;
+    /* Points pour les listes */
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.listeCompetences>li {
+    font-size: 1rem;
+    /* Taille plus petite pour les détails */
+    padding: 3px;
+    margin-bottom: 5px;
+    color: var(--TextColor);
+    /* Blanc atténué */
+}
+
+
+/* Styles pour les liens importants */
+.lienImportant {
+    color: var(--LienColor);
+    /* Bleu clair pour les liens */
+    text-decoration: none;
+    /* Pas de soulignement par défaut */
+    font-weight: bold;
+}
+
+.lienImportant:hover {
+    text-decoration: underline;
+    /* Soulignement au survol */
+}
+
+/* Styles pour les vidéos intégrées */
+.noneMobile {
+    margin: 15px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Bordure blanche translucide */
+    border-radius: 8px;
+}
+
+.blockMobile {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #00BFFF;
+    /* Bleu clair */
+    text-decoration: none;
+}
+
+.blockMobile:hover {
+    text-decoration: underline;
+}
+
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    /* Organise les éléments en colonne */
+    align-items: start;
+    /* Aligne les éléments à gauche */
+    margin-bottom: 20px;
+    /* Espacement entre les vidéos */
+}
+
+.videoNumber {
+    font-size: 1.1rem;
+    /* Taille légèrement plus grande pour le numéro */
+    font-weight: bold;
+    /* Met le texte en gras */
+    margin-bottom: 10px;
+    /* Espace entre le numéro et la vidéo */
+    color: white;
+    /* Texte blanc */
+}
+
+.noneMobile {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Bordure blanche discrète */
+    border-radius: 8px;
+    /* Coins arrondis */
+    margin: 0;
+    /* Supprime tout espace autour de l'iframe */
+}
+
+
+/* ---- */
+
+.cardFront p {
+    margin: 0;
+    text-align: center;
+    color: var(--TextColor);
+    padding: 0 5%;
+}
+
+.CardsList {
+    margin: 0px 50px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+.SousCardsList {
+    display: flex;
+    justify-content: center;
+}
+
+.cardFront img {
+    width: 90%;
+    margin: 7% 5% 0% 5%;
+    border-radius: 15px;
+    border: solid 2px var(--TextColor);
+}
+
+.hr-with-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 75px;
+}
+
+.hr-with-text::before {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: var(--TextColor);
+}
+
+.hr-with-text::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: var(--TextColor);
+}
+
+.hr-with-text span {
+    margin: 0 15px;
+    color: var(--TextColor);
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: larger;
+    transition: all 0.3s;
+}
+
+.hr-with-text span:hover {
+    font-size: x-large;
+    cursor: pointer;
+    text-shadow: var(--TextColor) 1px 0 5px;
+}
+
+.topMargForHead {
+    margin-top: 110px;
+}
+
+/* #region Style Bouttons */
+
+
+
+.ButtonTop {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 21px;
+    letter-spacing: 0.05em;
+    border-radius: 0em;
+    border: none;
+    background: var(--background-color);
+    box-shadow: 0px 0px 4px 1px #00C897;
+    color: #00C897;
+    overflow: hidden;
+    cursor: pointer;
+    border-left: 1px solid #00C897;
+    transition: all 0.3s;
+}
+
+.ButtonTop-roundLeft {
+    border-top-Left-radius: 0.8em;
+    border-Bottom-Left-radius: 0.8em;
+    border-left: 0px;
+}
+
+
+.ButtonTop-roundLeft-Sous {
+    border-Bottom-Left-radius: 0.8em;
+    border-left: 0px;
+}
+
+.ButtonTop-roundRight {
+    border-top-Right-radius: 0.8em;
+    border-Bottom-Right-radius: 0.8em;
+}
+
+.ButtonTop-roundRight-Sous {
+    border-Bottom-Right-radius: 0.8em;
+}
+
+.ButtonTop svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+}
+
+.ButtonTop span {
+    position: relative;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.ButtonTop::before,
+.ButtonTop::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.ButtonTop::before {
+    content: "";
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.ButtonTop:hover {
+    background: #ff44001a;
+}
+
+.sousMenu::before {
+    content: "";
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.sousMenu svg {
+    width: 0.8em;
+    height: 0.8em;
+    margin-right: 0.5em;
+}
+
+.sousMenu {
+    margin-top: 2px;
+    font-weight: 300;
+    font-size: 17px;
+    background: var(--background-color);
+    box-shadow: 0px 0px 3px 1px #5DADEC;
+    color: #5DADEC;
+    border-left: 1px solid #5DADEC;
+}
+
+.butACTIFsousMenu::before {
+    content: "";
+    background: linear-gradient(to top, #5daeec2b, #5daeec06);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.butACTIF::before {
+    content: "";
+    background: linear-gradient(to top, #00c89633, #00c8961a);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.butACTIFsousMenu {
+    box-shadow: 0px 0px 5px 1px #5DADEC;
+}
+
+.butACTIF {
+    box-shadow: 0px 0px 7px 1px #00c896;
+}
+
+/* #endregion Style Bouttons */
+/* #region Style Cards */
+
+.cardColor {
+    width: 50%;
+    padding: 1px 1px 5px 1px;
+    background: var(--TextColor);
+    border-radius: 10px;
+    transition: all .3s;
+    margin: 7%;
+    cursor: pointer;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.cardFront {
+    width: 100%;
+    height: 100%;
+    background-color: var(--CardBKColor);
+    border-radius: 10px;
+    transition: all .2s;
+    padding-bottom: 4px;
+}
+
+.cardFront:hover {
+    transform: scale(0.99);
+    border-radius: 14px;
+}
+
+.cardColor:hover {
+    box-shadow: 0px 0px 5px 1px #E0E0E0;
+    border-radius: 15px;
+}
+
+
+.ForTi {
+    margin: 7% 2%;
+}
+
+/* #endregion Cards */
+
+.Chut {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: default;
+}
+
+.SEUL {
+    width: 90%;
+    padding-bottom: 4px;
+    margin: 14% 2%;
+}
+
+.SEULFront {
+    padding-bottom: 3px;
+}
+
+.END {
+    width: 30%;
+    padding-bottom: 5px;
+    margin: 7% 10%;
+}
+
+.ENDFinal {
+    width: 60%;
+    padding-bottom: 5px;
+    margin: 14% 2%;
+}
+
+/* Carte retournable */
+
+.card-TwoFace {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: var(--TextColor);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-TwoFace img {
+    width: 90%;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-TwoFace:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--TextColor);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-TwoFace:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: var(--background-color);
+    font-weight: 700;
+}
+
+.card-TwoFace:hover img {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: var(--background-color);
+    line-height: 1.4;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    padding:20px;
+}
+
+
+
+.step {
+    cursor: pointer;
+    padding: 10px;
+    background: var(--CardBKColor);
+    margin-top: 25px;
+    border-radius: 5px;
+    color: var(--TextColor);
+}
+
+.step h1 {
+    color: var(--TextColor);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+}
+
+li {
+    font-size: x-large;
+}
+
+.content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    background: var(--CardBKColor);
+    border-left: 4px solid #007BFF;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-in;
+    display: block;
+    color: var(--TextColor);
+}
+
+.content.active {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 10px;
+
+}
+
+.progress-bar-container {
+    width: 7px;
+    background: none;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+}
+
+.progress-bar {
+    height: 0;
+    width: 100%;
+    background: #007BFF;
+    transition: height 0.3s ease-in-out;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.SmallText {
+    color: var(--TextColor);
+}
+
+.SmallText li {
+    font-size: 15px;
+}
+
+.PrograCote {
+    margin: 50px 0;
+    display: flex;
+    max-width: 98.65%;
+    justify-content: space-around;
+}
+
+.PrograInfo {
+    width: 50%;
+}
+
+.PrograCode {
+    width: 50%;
+    background-color: #262626;
+    min-height: 10px;
+}
+
+.EtapeOL {
+    padding-left: 65px;
+    list-style: none;
+    /* Supprime la numérotation par défaut */
+    counter-reset: step-counter;
+    /* Initialise un compteur */
+}
+
+.step {
+    counter-increment: step-counter;
+    /* Incrémente le compteur */
+    list-style: none;
+    /* Assure que la numérotation standard est désactivée */
+}
+
+.step::before {
+    content: "Étape " counter(step-counter);
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .step::before {
+        content: "E" counter(step-counter);
+    }
+
+    .EtapeOL {
+        padding-left: 40px;
+    }
+
+    .CardsList {
+        display: block;
+        margin: 0px 10px;
+    }
+
+    .ForTi {
+        margin: 7%;
+    }
+
+    .SEUL {
+        margin: 7% 30%;
+    }
+
+    .END {
+        width: 60%;
+        margin: 7%;
+    }
+
+    .ENDFinal {
+        margin: 14% 30%;
+    }
+
+    .ButtonTop {
+        font-size: 15px;
+        letter-spacing: 0.01em;
+        padding: 1px 0;
+    }
+
+    .ButtonTop span {
+        padding: 0.3em 0.5em 0.3em 0.5em;
+    }
+
+    .ButtonTop svg {
+        display: none;
+    }
+
+    .card-container {
+        display: block;
+    }
+
+    .card-TwoFace {
+        margin-bottom: 25px;
+    }
+
+    .noneMobile {
+        width: 100%;
+    }
+
+    .leftDecal {
+        margin-left: 0px;
+    }
+
+    .pagesCours {
+        margin: 40px 10px 0 10px;
+    }
+
+    .progress-bar-container {
+        width: 3px;
+    }
+
+    .step h1 {
+        font-size: x-large;
+    }
+
+    li {
+        font-size: x-large;
+    }
+
+    .pagesCours i {
+        font-size: 11px;
+    }
+
+    .text-danger {
+        font-size: 11px;
+    }
+
+    .SmallText li {
+        font-size: 11px;
+    }
+
+    .SmallText {
+        font-size: 11px;
+    }
+
+    .PrograCote {
+        max-width: 98.65%;
+        margin: 25px 0;
+    }
+
+    .PrograInfo {
+        width: 100%;
+    }
+
+    .PrograCode {
+        width: 100%;
+    }
+
+}
